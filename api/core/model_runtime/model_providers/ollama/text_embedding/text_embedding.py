@@ -59,7 +59,7 @@ class OllamaEmbeddingModel(TextEmbeddingModel):
         if not endpoint_url.endswith('/'):
             endpoint_url += '/'
 
-        endpoint_url = urljoin(endpoint_url, 'api/embed')
+        endpoint_url = urljoin(endpoint_url, 'api/embeddings')
 
         # get model properties
         context_size = self._get_context_size(model, credentials)
